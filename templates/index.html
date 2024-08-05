@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="{% url 'index' %}"><li>Главная</li></a>
+                <a href="{% url 'about' %}"><li>О нас</li></a>
+                <li>Новости</li>
+                <li>Контакы</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+</body>
+</html>
