@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{name_page}}</title>
 </head>
 <body>
     <header>
@@ -14,16 +14,21 @@
                 <li>Новости</li>
                 <li>Контакы</li>
             </ul>
+            <h1>{{name_page}}</h1>
         </nav>
     </header>
 
     <h1>{{title}}</h1>
     <p>{{description}}</p>
-    <p>{{students}}</p>
-    {% for name in students %}
-        <p>{{name}}</p>
-    {% endfor %}
+    
 
     <a href="https://www.instagram.com/">Instagram</a>
+
+    <br>
+    {% for student in students %}
+    <p>{{student.full_name}}</p>
+    <p>{{student.age}}</p>
+    <p>{{student.hobby}}</p>
+    {% endfor %}
 </body>
 </html>
